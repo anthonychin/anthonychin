@@ -1,0 +1,356 @@
+/* font */
+/*@font-face
+{
+	font-family: 'Futura Bk BT';
+	src: url('Futura Book BT') format('truetype');
+}*/
+
+/* start */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,
+acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,
+sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,
+thead,tr,th,td
+{
+    border:0;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+}
+
+
+body, html {
+	font-family: 'Ubuntu', 'Lato', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
+	*/
+	line-height: 30px;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+/* headers */
+#title {
+	position: relative;
+	margin: 0px auto;
+	width: 400px;
+	padding: 20px 0px 0px 0px;
+}
+
+#header {
+	border-bottom: 1px solid #ccc;
+	margin: 0px auto;
+	width: 800px;
+}
+
+h3 {
+	font-family: 'Ubuntu', 'Lato', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
+	*/
+   	font-size: 18px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Ubuntu', 'Lato', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
+	*/
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 20px;
+   margin: 10px auto;
+}
+
+h5 {
+	color: #77787B;
+	position: relative;
+	top: -25px;
+	font-family: 'Ubuntu', 'Lato', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
+	*/
+	font-size: 15px;
+}
+/* images */
+
+.box img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+
+	padding: 3px;
+	background-color: rgba(134, 120, 131, 0.1);
+}
+/* links */
+a {
+	text-decoration: none;
+	color: #434343;
+}
+
+a:hover, a:active{
+	color: #000000;
+}
+
+#menubar {
+	position: absolute;
+}
+
+#links{
+	padding-left: 75px;
+	width: 150px;
+	position: fixed;
+}
+
+#menubar a{
+	font-family: 'Lato', Arial, sans-serif;
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
+	*/
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: normal;
+	opacity: 0.4;
+	cursor: pointer;
+	color: #000000;
+}
+
+#menubar a:hover{
+	font-size: 30px;
+}
+
+/* contents */
+.container {
+	position: relative;
+	background-color: #fff;
+	margin: 0px auto; /* 0 px is for vertical, auto for hori */  
+	padding: 50px 0px 50px 0px;	
+	width: 800px;
+}
+
+#main {
+	text-align: left;
+	color: #666666;
+	padding: 5px 0px 5px 15px;
+	width: 780px;
+	margin: 0px;
+	overflow-y:auto;
+}
+
+
+/* profile */
+#profile {
+	color: #949494;	
+	display: block;
+	font-size: 25px;
+}
+
+#profile a{
+	text-decoration: none;
+	color: #787878;
+}
+
+#profile a:hover{
+	text-decoration: underline;
+} 
+/* project */
+#project {
+	display: none;
+}
+
+.box{
+
+	margin: 0px auto;
+	width: 700px;
+ 	background: rgba(161, 161, 131, 0.2);
+  	color: rgb(108,108,108); 	
+  	border-radius: 25px;	
+}
+
+#project .box-header {
+  	margin-top: 40px;
+}
+
+#project .box-header .ribbon{
+	width: 720px;
+	height: 40px;
+
+	position: relative;
+	top: 15px;
+	background: #5F5F5F; 
+	margin: 0 -10px;
+}
+
+/* ribbon tails! */
+#project .box-header .ribbon-content:before, .box-header .ribbon-content:after{
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #363636 transparent transparent transparent;
+	bottom: -10px;
+}  
+
+.box-header .ribbon-content:before{
+	left: 0;
+	border-width: 10px 0px 0px 10px;
+}
+
+.box-header .ribbon-content:after{
+	right: 0;
+	border-width: 10px 10px 0px 0px;
+}
+
+.box-header .ribbon-content h1{
+	margin: 0 40px;
+	font-size: 28px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.box-header .ribbon-content h1 a{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.box-header .ribbon-content h1 a:hover{
+	color: #E0E1E8;
+}
+
+.box-body{
+	position: relative;
+	margin-top: 30px;
+	height: 250px;
+}
+
+.box-body .screenshot{
+	position: absolute;
+	width: 300px;
+}
+
+.box-body .info{
+	position: absolute;
+	width: 325px;
+	top: 0px;
+	right: 0px;
+}
+
+.box-body .info p:first-child{
+	margin-top: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-start: 0;
+}
+
+.box-body > * {
+	padding: 0px 30px;
+}
+
+.info p {
+	font-size: 15px
+}
+
+/* interest */
+#interest {
+	display: none;
+}
+
+.slide {
+	margin-top: 10px;
+}
+
+.slide .stuff{
+	width: 150px;                  
+	height: 200px;
+	margin: 0px auto;
+	opacity: 0.5;
+	overflow: hidden;
+
+	-webkit-box-shadow:0 0 10px #121212;
+	box-shadow: 0 0 10px #121212;
+	-moz-box-shadow: 0 0 10px #121212;
+}
+
+#interest p {
+	padding: 15px;
+	font-size: 15px;
+}
+
+/* contact */
+#contact {	
+	display: none;
+}
+
+
+li:hover img {
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+}
+
+li img:hover{
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+}
+
+li img{
+	transition: transform 0.5s ease;
+	-webkit-transition: transform 0.5s ease;
+}
+
+#contact #cont{
+	margin: 0px auto;
+}
+
+#contact ul.listofcont {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#contact ul.listofcont li {
+	display: inline-block;
+	padding: 0 8px;
+}
+
+#footer {
+	margin: 0px auto;
+	width: 800px;
+}
+
+#footLine {
+	border-bottom: 1px solid #ccc;
+}
+
+#flip-games, #flip-sports, #flip-affiliations,#sports-panel, #games-panel, #affiliations-panel
+{
+padding:5px;
+text-align:center;
+width: 700px;
+margin: 0px auto;
+overflow: hidden;
+opacity: 0.75;
+
+-webkit-box-shadow:0 0 10px #121212;
+box-shadow: 0 0 10px #121212;
+-moz-box-shadow: 0 0 10px #121212;
+
+}
+
+#sports-panel, #games-panel, #affiliations-panel
+{
+display:none;
+}
+
+
+.slide {
+	margin-top: 10px;
+}
+
+.slide .stuff{
+	width: 150px;                  
+	height: 200px;
+	margin: 0px auto;
+	opacity: 0.5;
+	overflow: hidden;
+
+	-webkit-box-shadow:0 0 10px #121212;
+	box-shadow: 0 0 10px #121212;
+	-moz-box-shadow: 0 0 10px #121212;
+}
