@@ -32,7 +32,8 @@ html {
 
 /* headers */
 #title {
-	position: relative;
+/*	border: 1px dotted;
+*/	position: relative;
 	margin: 0px auto;
 	width: 400px;
 	padding: 20px 0px 0px 0px;
@@ -65,11 +66,11 @@ h4 {
 h5 {
 	color: #77787B;
 	position: relative;
-	top: -25px;
 	font-family: 'Ubuntu', 'Lato', Arial, sans-serif;
 	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
 	*/
 	font-size: 15px;
+	/*border: 1px solid;*/
 }
 /* images */
 
@@ -91,49 +92,73 @@ a:hover, a:active{
 	color: #000000;
 }
 
-#menubar {
+/*#menubar {
 	position: absolute;
 }
+*/
 
 #links{
-	padding-left: 75px;
 	width: 150px;
-	position: fixed;
+	position: relative;
+}
+
+@media (max-width: 1100px) {
+	#links {
+		width: auto;
+		width: 500px;
+		position: relative;
+/*		border: 1px solid;
+*/		margin-bottom: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#menubar ul.list li {
+		display: inline-block;
+		margin: 0px 20px;
+	}
 }
 
 #menubar a{
 	font-family: 'Lato', Arial, sans-serif;
-	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;
-	*/
+	/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 	font-size: 24px;*/
 	font-size: 25px;
 	line-height: 45px;
 	font-weight: normal;
 	opacity: 0.4;
 	cursor: pointer;
 	color: #000000;
-}
+/*	border: 1px solid;
+*/}
 
 #menubar a:hover{
-	font-size: 30px;
+	font-size: 27px;
+}
+
+
+#menubar ul.list li {
+	display: inline-block;
+	padding: 0 8px;
 }
 
 /* contents */
 .container {
 	position: relative;
 	background-color: #fff;
-	margin: 0px auto; /* 0 px is for vertical, auto for hori */  
-	padding: 50px 0px 50px 0px;	
+	margin: -75px auto; /* 0 px is for vertical, auto for hori */
+	padding: 0px 0px 50px 0px;	
 	width: 800px;
-}
+/*	border: 5px dashed;
+*/}
 
-#main {
+/*#main {
 	text-align: left;
 	color: #666666;
 	padding: 5px 0px 5px 15px;
 	width: 780px;
 	margin: 0px;
 	overflow-y:auto;
-}
+}*/
 
 
 /* profile */
@@ -310,13 +335,13 @@ li img{
 }
 
 #footer {
-	margin: 0px auto;
-	width: 800px;
+	margin: 125px auto;
+	width: 200px;
 }
 
-#footLine {
+/*#footLine {
 	border-bottom: 1px solid #ccc;
-}
+}*/
 
 #flip-games, #flip-sports, #flip-affiliations,#sports-panel, #games-panel, #affiliations-panel
 {
