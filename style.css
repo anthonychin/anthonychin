@@ -1,0 +1,113 @@
+@font-face {
+	font-family: 'Calibre-Bold';
+	/* src: url('../font/CalibreWeb-Bold.eot'); */
+	/* src: url('../font/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'), EOT形式 */
+	src: url('./font/CalibreWeb-Bold.woff') format('woff'); /* WOFF形式 */
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Calibre-Regular';
+	/* src: url('../font/CalibreWeb-Regular.eot'); */
+	/* src: url('../font/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), EOT形式 */
+	src: url('./font/CalibreWeb-Regular.woff') format('woff'); /*WOFF形式*/
+}
+
+@font-face {
+    font-family: 'Hiragino Kaku Gothic Pro W3';
+    src: url('./font/HiraginoKakuGothicProW3.otf') format("opentype");
+}
+
+body
+{
+	margin:40px auto;
+	max-width:550px;
+	line-height:1.6;
+	font-size:18px;
+	color: #1a1a1a;
+	padding:020px;
+	font-family: 'Calibre-Regular',"Hiragino Kaku Gothic Pro W3", Sans-Serif;
+    /* font-family: "Hiragino Kaku Gothic Pro W3",Sans-Serif; */
+    /* text-align: center */
+}
+
+h2,h3
+{   
+    font-family: 'Calibre-Bold';
+	font-weight:bolder;
+    line-height:1.2
+}
+
+h1 {
+    font-family: 'Calibre-Bold';
+    line-height:1.2;
+    text-align: center    
+}
+
+.box {
+    position: relative;
+	margin-top: 30px;
+	height: 250px;
+}
+
+img {
+    width: 150px;
+    height: auto
+}
+
+.info {
+    position: absolute;
+    width: 325px;
+    top: 0px;
+    right: 0px;
+}
+
+div.fancyPositioning div.picture-left {
+	float: left;
+	width: 40%;
+	overflow: hidden;
+	margin-right: 1em
+}
+
+div.fancyPositioning div.picture-left img {
+	width: 100%
+}
+
+div.fancyPositioning div.picture-left figure {
+	margin: 10px
+}
+
+div.fancyPositioning div.picture-left figure figcaption {
+	font-size: .7em
+}
+
+div.fancyPositioning div.tleft {
+	float: left;
+	width: 55%
+}
+
+div.fancyPositioning div.tleft {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+div.fancyPositioning:after {
+	display: block;
+	content: "";
+	clear: both
+}
+
+.links {
+    text-align: center;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: 1s;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    border-color: #1a1a1a;
+  }
